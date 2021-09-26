@@ -21,4 +21,10 @@ window.onload = function(){
     equal.addEventListener("click", function(){
         result.innerHTML = eval(result.innerHTML);
     })
+
+    for (let i = 0;i < buttons.length; i++){
+        buttons[i].addEventListener("click", function(){
+            result.innerHTML = result.innerHTML + buttons[i].innerHTML;
+        })
+    }
 }
