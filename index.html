@@ -8,15 +8,16 @@
 
     <!-- CSS -->
     <link rel="stylesheet" href="style.css">
+
+    <!-- JS -->
+    <script src="script.js"></script>
 </head>
 <body>
     <div class="container">
-        <p class="result">
-            3+3
-        </p>
+        <p id="result">2*8</p>
         <table>
             <tr>
-                <td class="buttons">C</td>
+                <td id="clean-all">C</td>
                 <td class="buttons">+</td>
                 <td class="buttons">-</td>
                 <td class="buttons">X</td>
@@ -40,13 +41,13 @@
                 <td class="buttons">1</td>
                 <td class="buttons">2</td>
                 <td class="buttons">3</td>
-                <td class="buttons" rowspan="2">=</td>
+                <td rowspan="2" id="equal">=</td>
             </tr>
 
             <tr>
                 <td class="buttons">0</td>
                 <td class="buttons">.</td>
-                <td class="buttons">&larr;</td>
+                <td id="clean">&larr;</td>
             </tr>
         </table>
     </div>

@@ -48,12 +48,12 @@ body{
     border-radius: 15px;
 }
 
-.buttons:hover{
+.container table tr td:hover{
     background-color: var(--backgrond-body);
     transition: all 0.2s;
 }
 
-.result{
+#result{
     display: flex;
     align-items: center;
     justify-content: right;
