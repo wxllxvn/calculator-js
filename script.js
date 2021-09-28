@@ -19,7 +19,13 @@ window.onload = function(){
     })
 
     equal.addEventListener("click", function(){
-        result.innerHTML = eval(result.innerHTML);
+        let value = result.innerHTML.split('');
+        for (let v = 0;v < value.length;v++){
+            if (value[v] === "X"){
+                value[v] = "*";
+            }
+        }
+        result.innerHTML = eval(value.join(''));
     })
 
     for (let i = 0;i < buttons.length; i++){
